@@ -17,7 +17,12 @@ module.exports = {
    ************************************************************************** */
 
   secret: 'supersecret_development',
-  // models: {
-  //   connection: 'someMongodbServer'
-  // }
+  models: {
+    connection: 'mongo',
+    migrate: 'safe',
+    schema: true,
+  },
+  log: {
+    level: 'silly',
+  },
 };

@@ -19,6 +19,9 @@ module.exports = {
       type: 'string',
       enum: ['superAdmin', 'admin', 'employee'],
     },
+    number: {
+      type: 'string',
+    },
     toJSON() {
       const obj = this.toObject();
       delete obj.password;
