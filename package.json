@@ -5,10 +5,11 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
+    "bcrypt": "^1.0.3",
     "include-all": "^1.0.0",
+    "jsonwebtoken": "^8.0.1",
     "rc": "1.0.1",
-    "sails": "~0.12.13",
-    "sails-disk": "~0.10.9"
+    "sails": "~0.12.13"
   },
   "scripts": {
     "precommit": "lint-staged",
