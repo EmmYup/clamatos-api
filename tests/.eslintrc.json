@@ -1,6 +1,19 @@
 {
   "globals": {
     "app": true,
-    "jasmine": true
+    "jasmine": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    ".eslintrc-sails",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      { "singleQuote": true, "trailingComma": "es5" }
+    ]
   }
 }

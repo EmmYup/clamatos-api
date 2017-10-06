@@ -12,7 +12,7 @@ module.exports = {
       .then(res.ok)
       .catch(res.negotiate);
   },
-  show(req, user) {
+  show(req, res) {
     const id = req.param('id');
     User.findOne({ id })
       .then(res.ok)
@@ -27,6 +27,6 @@ module.exports = {
     const id = req.param('id');
     User.destroy({ id })
       .then(res.ok)
-      .then(res.negotiate);
+      .catch(res.negotiate);
   },
 };

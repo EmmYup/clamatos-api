@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserController create should create a user 1`] = `
+Object {
+  "createdAt": "2017-01-01T05:00:00.000Z",
+  "id": 4,
+  "name": "user4",
+  "type": "employee",
+  "updatedAt": "2017-01-01T05:00:00.000Z",
+}
+`;
+
+exports[`UserController index should find employee users 1`] = `
+Array [
+  Object {
+    "createdAt": "2017-01-01T05:00:00.000Z",
+    "id": 2,
+    "name": "user2",
+    "type": "employee",
+    "updatedAt": "2017-01-01T05:00:00.000Z",
+  },
+  Object {
+    "createdAt": "2017-01-01T05:00:00.000Z",
+    "id": 3,
+    "name": "user3",
+    "type": "employee",
+    "updatedAt": "2017-01-01T05:00:00.000Z",
+  },
+]
+`;
+
+exports[`UserController index should find users by name if it is provided 1`] = `
+Array [
+  Object {
+    "createdAt": "2017-01-01T05:00:00.000Z",
+    "id": 3,
+    "name": "user3",
+    "type": "employee",
+    "updatedAt": "2017-01-01T05:00:00.000Z",
+  },
+]
+`;
+
+exports[`UserController show should return a single user 1`] = `
+Object {
+  "createdAt": "2017-01-01T05:00:00.000Z",
+  "id": 1,
+  "name": "user1",
+  "type": "admin",
+  "updatedAt": "2017-01-01T05:00:00.000Z",
+}
+`;
